@@ -1,0 +1,53 @@
+.Pages {
+  &-Heading {
+    text-align: center;
+  }
+
+  &-World {
+    color: white;
+  }
+
+  &-wrapper {
+    text-align: center;
+  }
+
+  &-container {
+    text-align: center;
+  }
+
+  &-friend {
+    &:first-child {
+      color: red;
+      background-color: blue;
+      font-size: 1rem;
+      border-radius: 1rem;
+    }
+
+    &:nth-of-type(2) {
+      color: orange;
+      background-color: fuchsia;
+      font-size: 1.5rem;
+      text-decoration: underline;
+    }
+
+    &:nth-of-type(3) {
+      color: green;
+      background-color: pink;
+      font-size: 2rem;
+    }
+
+    &:nth-of-type(4) {
+      color: blue;
+      background-color: yellow;
+      font-size: 2.5rem;
+      text-decoration: line-through;
+    }
+
+    &:nth-of-type(5) {
+      color: magenta;
+      background-color: red;
+      font-size: 3rem;
+      border-radius: 2rem;
+    }
+  }
+}
