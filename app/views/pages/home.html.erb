@@ -1,25 +1,20 @@
 <h1 class="Pages-Heading">Hello <span class="Pages-World">World</span></h1>
 
-<div id="wrapper" class="Pages-wrapper"></div>
-<div id="container" class="Pages-container">
-
-</div>
+<div id="container" class="Pages-container"></div>
 <script>
-  let wrapper = document.getElementById('wrapper');
   let container = document.getElementById('container');
   const friends = ["Ray", "Oscar", "Gwen", "Bob", "Marie"];
 
   friends.forEach(function(element) {
-      let greetingElement = document.createElement('p');
-      greetingElement.innerText = `Hello ${element}`;
-      wrapper.appendChild(greetingElement)
-  });
-
-  friends.forEach(function(element) {
       let commentElement = document.createElement('p');
       commentElement.className = 'Pages-friend';
-      commentElement.innerText = element;
+      commentElement.innerText = `Hello ${element}`;
       container.appendChild(commentElement);
   });
-</script>
 
+  let children = container.children;
+  let arr = Object.keys(children).map(function (key) { return children[key]; });
+  while (arr.length) {
+      container.append(arr.splice(Math.floor(Math.random() * arr.length), 1)[0]);
+  }
+</script>
