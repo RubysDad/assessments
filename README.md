@@ -1,24 +1,5 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+[Click Here to see the Browser Assessment](https://github.com/RubysDad/assessments/blob/master/app/views/pages/home.html.erb)
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+[Click here to see the Server Side Assessment](https://github.com/RubysDad/assessments/blob/master/lib/text_formatter.rb)
